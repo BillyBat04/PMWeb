@@ -15,7 +15,7 @@ namespace PMWeb.Controllers
         public ActionResult Index()
         {
             // Lấy chuỗi kết nối từ file Web.config
-            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["QuanLySanPhamConnectionString"].ConnectionString;
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PMDataConnectionString"].ConnectionString;
 
             // Khởi tạo đối tượng QuanLySanPhamDataContext với constructor có tham số chuỗi kết nối
             QuanLySanPhamDataContext context = new QuanLySanPhamDataContext(connectionString);
