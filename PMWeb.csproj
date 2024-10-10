@@ -154,6 +154,11 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Hinh\PRO01.jpg" />
+    <Content Include="Hinh\PRO02.jpg" />
+    <Content Include="Hinh\PRO03.jpg" />
+    <Content Include="Hinh\PRO04.jpg" />
+    <Content Include="Hinh\PRO05.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
