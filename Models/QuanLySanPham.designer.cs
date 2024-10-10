@@ -36,9 +36,10 @@ namespace PMWeb.Models
     partial void InsertProduct(Product instance);
     partial void UpdateProduct(Product instance);
     partial void DeleteProduct(Product instance);
-    #endregion
-		
-		public QuanLySanPhamDataContext(string connection) : 
+        #endregion
+
+        
+        public QuanLySanPhamDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
