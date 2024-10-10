@@ -1,17 +1,15 @@
-﻿using System;
+﻿using PMWeb.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using PMWeb.Models;
 
 namespace PMWeb.Controllers
 {
-    public class CatalogController : Controller
+    public class ProductController : Controller
     {
-        // GET: Catalog
-        
-         
+        // GET: Product
         public ActionResult Index()
         {
             // Lấy chuỗi kết nối từ file Web.config
@@ -21,12 +19,10 @@ namespace PMWeb.Controllers
             QuanLySanPhamDataContext context = new QuanLySanPhamDataContext(connectionString);
 
             // Lấy danh sách Catalog từ cơ sở dữ liệu
-            List<Catalog> dsCatalog = context.Catalogs.ToList();
+            List<Product> dsProducts = context.Products.ToList();
 
             // Trả về view với danh sách Catalog
-            return View(dsCatalog);
-
-
+            return View(dsProducts);
         }
     }
 }
